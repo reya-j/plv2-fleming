@@ -29,7 +29,7 @@ resources:
     type: cluster
     integration: ship-dcl
     pointer:
-    sourceName : "cluster-dcl"
+      sourceName : "cluster-dcl"
 
   - name: allpl-ecscluster
     type: cluster
