@@ -2,61 +2,63 @@ jobs:
 
 #RELEASE
 
-  - name: fl-release
+  - name: allpl-release
     type: release
     steps:
-      - IN: fl-version
+      - IN: allpl-version
         #versionName: testrelease
       - TASK: managed
         bump: beta
-      - IN: fl-tg3
+      - IN: allpl-tg3
     flags:
-      - release_flmaster
+      - release_allpl
       
 #MANIFESTS
       
-  - name: fl-manifest1
+  - name: allpl-manifest1
     type: manifest
     steps:
-      - IN: fl-image1
+      - IN: allpl-image1
        # versionNumber: 100
       - IN: fl-tg1
       
-  - name: fl-manifest2multiimg
-    type: manifest
-    steps:
-      - IN: fl-image2
-      - IN: fl-image7workingdir
-      - IN: fl-dopts
-        applyTo:
-          - fl-image2
-      - IN: fl-tg2
+  # - name: allpl-manifest2multiimg
+  #   type: manifest
+  #   steps:
+  #     - IN: fl-image2
+  #     - IN: fl-image7workingdir
+  #     - IN: fl-dopts
+  #       applyTo:
+  #         - fl-image2
+  #     - IN: fl-tg2
       
       
-  #- name: fl-tpdeployup
-   # type: deploy
-    #steps:
-     # - IN: fl-manifest1
-      #- IN: fltp-dopts1
-      #- IN: fl-tripubcluster
-    #  - TASK: managed
-     #   deployMethod: upgrade
-      
-  - name: fl-tpdeploybg1
+  - name: allpl-tpdeployup
     type: deploy
     steps:
-      - IN: fl-manifest1
-      - IN: fl-manifest2multiimg
-        switch: off
-      - IN: fl-dopts
-      - IN: fl-tripubcluster
+      - IN: allpl-manifest1
+      - IN: allpl-dopts
+      - IN: allpl-tripubcluster
+      - TASK: managed
+        deployMethod: upgrade
+      
+  # - name: fl-tpdeploybg1
+  #   type: deploy
+  #   steps:
+  #     - IN: fl-manifest1
+  #     - IN: fl-manifest2multiimg
+  #       switch: off
+  #     - IN: fl-dopts
+  #     - IN: fl-tripubcluster
       
   - name: fl-ecsdeploybg1
     type: deploy
     steps:
-      - IN: fl-manifest1
-      - IN: fl-manifest2multiimg
-        switch: off
-      - IN: fl-dopts
-      - IN: fl-ecscluster
+      - IN: allpl-dopts-manifest1
+      # - IN: fl-manifest2multiimg
+      #   switch: off
+      - IN: allpl-dopts
+      - IN: allpl-ecscluster
+      - TASK: managed
+        deployMethod: upgrade
       
