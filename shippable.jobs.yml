@@ -43,14 +43,12 @@ jobs:
   #     - IN: fl-tg2
       
       
-  - name: allpl-tpdeployup
+  - name: allpl-tpdeploybg
     type: deploy
     steps:
       - IN: allpl-manifest1
       - IN: allpl-dopts
       - IN: allpl-tripubcluster
-      - TASK: managed
-        deployMethod: upgrade
     on_start:
       - NOTIFY: allpl-email
     on_success:
@@ -60,14 +58,32 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
-  # - name: fl-tpdeploybg1
-  #   type: deploy
-  #   steps:
-  #     - IN: fl-manifest1
-  #     - IN: fl-manifest2multiimg
-  #       switch: off
-  #     - IN: fl-dopts
-  #     - IN: fl-tripubcluster
+  - name: allpl-ddcdeploy
+    type: deploy
+    steps:
+      - IN: allpl-manifest1
+      # - IN: fl-manifest2multiimg
+      #   switch: off
+      - IN: allpl-dopts
+      - IN: allpl-ddccluster
+    on_start:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+    on_success:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+    on_failure:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+      
+  - name: allpl-dcldeploy
+    type: deploy
+    steps:
+      - IN: allpl-manifest1
+      # - IN: fl-manifest2multiimg
+      #   switch: off
+      - IN: allpl-dopts
+      - IN: allpl-dclcluster
       
   - name: allpl-ecsdeployup1
     type: deploy
@@ -77,6 +93,23 @@ jobs:
       #   switch: off
       - IN: allpl-dopts
       - IN: allpl-ecscluster
+      - TASK: managed
+        deployMethod: upgrade
+    on_success:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+    on_failure:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+      
+  - name: allpl-gkedeployup1
+    type: deploy
+    steps:
+      - IN: allpl-manifest1
+      # - IN: fl-manifest2multiimg
+      #   switch: off
+      - IN: allpl-dopts
+      - IN: allpl-gkecluster
       - TASK: managed
         deployMethod: upgrade
     on_success:
