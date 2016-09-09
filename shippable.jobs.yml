@@ -20,7 +20,7 @@ jobs:
     steps:
       - IN: allpl-image1
        # versionNumber: 100
-      - IN: fl-tg1
+      - IN: allpl-tg1
       
   # - name: allpl-manifest2multiimg
   #   type: manifest
@@ -54,7 +54,7 @@ jobs:
   - name: fl-ecsdeploybg1
     type: deploy
     steps:
-      - IN: allpl-dopts-manifest1
+      - IN: allpl-manifest1
       # - IN: fl-manifest2multiimg
       #   switch: off
       - IN: allpl-dopts
