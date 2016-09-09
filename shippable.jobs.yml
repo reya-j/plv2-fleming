@@ -84,6 +84,12 @@ jobs:
       #   switch: off
       - IN: allpl-dopts
       - IN: allpl-dclcluster
+    on_success:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+    on_failure:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
       
   - name: allpl-ecsdeployup1
     type: deploy
