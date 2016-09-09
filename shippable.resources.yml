@@ -19,17 +19,17 @@ resources:
       
 #CLUSTERS
   
-  # - name: allpl-ddccluster
-  #   type: cluster
-  #   integration: ship-ddc
-  #   pointer:
-  #     sourceName : "nothing" #we can anything because it is mandatory but ddc doesnot have clusters
+  - name: allpl-ddccluster
+    type: cluster
+    integration: ship-ddc
+    pointer:
+      sourceName : "nothing" #we can anything because it is mandatory but ddc doesnot have clusters
 
-  # - name: allpl-dclcluster
-  #   type: cluster
-  #   integration: ship-dcl
-  #   pointer:
-  #   sourceName : "cluster-dcl"
+  - name: allpl-dclcluster
+    type: cluster
+    integration: ship-dcl
+    pointer:
+    sourceName : "cluster-dcl"
 
   - name: allpl-ecscluster
     type: cluster
@@ -38,12 +38,12 @@ resources:
       sourceName : "testCL"
       region: "us-west-2"
       
-  # - name: allpl-gkecluster
-  #   type: cluster
-  #   integration: ship-gke
-  #   pointer:
-  #     sourceName: "small-cluster" #name of the cluster we are deploying.
-  #     region: "us-east1-d"
+  - name: allpl-gkecluster
+    type: cluster
+    integration: ship-gke
+    pointer:
+      sourceName: "small-cluster" #name of the cluster we are deploying.
+      region: "us-east1-d"
       
   - name: allpl-tripubcluster
     type: cluster
