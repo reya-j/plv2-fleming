@@ -12,6 +12,11 @@ jobs:
       - IN: allpl-tg3
     flags:
       - release_allpl
+    on_start:
+      - NOTIFY: allpl-email
+    on_success:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
       
 #MANIFESTS
       
@@ -21,6 +26,11 @@ jobs:
       - IN: allpl-image1
        # versionNumber: 100
       - IN: allpl-tg1
+    on_start:
+      - NOTIFY: allpl-email
+    on_success:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
       
   # - name: allpl-manifest2multiimg
   #   type: manifest
@@ -41,6 +51,14 @@ jobs:
       - IN: allpl-tripubcluster
       - TASK: managed
         deployMethod: upgrade
+    on_start:
+      - NOTIFY: allpl-email
+    on_success:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+    on_failure:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
       
   # - name: fl-tpdeploybg1
   #   type: deploy
@@ -61,4 +79,10 @@ jobs:
       - IN: allpl-ecscluster
       - TASK: managed
         deployMethod: upgrade
+    on_success:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+    on_failure:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
       
