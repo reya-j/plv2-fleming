@@ -69,7 +69,7 @@ jobs:
   #     - IN: fl-dopts
   #     - IN: fl-tripubcluster
       
-  - name: fl-ecsdeploybg1
+  - name: allpl-ecsdeployup1
     type: deploy
     steps:
       - IN: allpl-manifest1
