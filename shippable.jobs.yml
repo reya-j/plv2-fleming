@@ -47,6 +47,7 @@ jobs:
     type: deploy
     steps:
       - IN: allpl-manifest1
+        switch: off
       - IN: allpl-dopts
       - IN: allpl-tripubcluster
     on_start:
@@ -62,6 +63,7 @@ jobs:
     type: deploy
     steps:
       - IN: allpl-manifest1
+        switch: off
       # - IN: fl-manifest2multiimg
       #   switch: off
       - IN: allpl-dopts
@@ -95,6 +97,7 @@ jobs:
     type: deploy
     steps:
       - IN: allpl-manifest1
+        switch: off
       # - IN: fl-manifest2multiimg
       #   switch: off
       - IN: allpl-dopts
@@ -112,6 +115,7 @@ jobs:
     type: deploy
     steps:
       - IN: allpl-manifest1
+        switch: off
       # - IN: fl-manifest2multiimg
       #   switch: off
       - IN: allpl-dopts
