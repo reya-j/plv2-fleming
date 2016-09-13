@@ -32,6 +32,20 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
+  - name: allpl-manifest2invalidtag
+    type: manifest
+    steps:
+      - IN: allpl-image3invalidtag
+       # versionNumber: 100
+      - IN: allpl-tg2
+      
+  - name: allpl-manifest3invalidformat
+    type: manifest
+    steps:
+      - IN: allpl-image4invalidformat
+       # versionNumber: 100
+      - IN: allpl-tg3
+      
   # - name: allpl-manifest2multiimg
   #   type: manifest
   #   steps:
@@ -128,4 +142,36 @@ jobs:
     on_failure:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
+      
+  - name: allpl-gkedeployup2
+    type: deploy
+    steps:
+      - IN: allpl-manifest2invalidtag
+      - IN: allpl-dopts
+      - IN: allpl-gkecluster
+      - TASK: managed
+        deployMethod: upgrade
+        
+  - name: allpl-gkedeploybg1
+    type: deploy
+    steps:
+      - IN: allpl-manifest2invalidtag
+      - IN: allpl-dopts
+      - IN: allpl-gkecluster
+      
+  - name: allpl-ecsdeployup2
+    type: deploy
+    steps:
+      - IN: allpl-manifest3invalidformat
+      - IN: allpl-dopts
+      - IN: allpl-gkecluster
+      - TASK: managed
+        deployMethod: upgrade
+        
+  - name: allpl-ecsdeploybg1
+    type: deploy
+    steps:
+      - IN: allpl-manifest3invalidformat
+      - IN: allpl-dopts
+      - IN: allpl-ecscluster
       
