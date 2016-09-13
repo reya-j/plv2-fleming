@@ -17,6 +17,22 @@ resources:
     seed:
       versionName: "latest"
       
+  - name: allpl-image3invalidtag
+    type: image
+    integration: ship-docker
+    pointer:
+      sourceName: "shiphitchcock1/pipelinev2"
+    seed:
+      versionName: "test13sep"
+      
+  - name: allpl-image4invalidformat
+    type: image
+    integration: ship-docker
+    pointer:
+      sourceName: "shiphitchcock1/pipelinev2"
+    seed:
+      versionName: "test 13sep"
+      
 #CLUSTERS
   
   - name: allpl-ddccluster
