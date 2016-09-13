@@ -175,3 +175,34 @@ jobs:
       - IN: allpl-dopts
       - IN: allpl-ecscluster
       
+  - name: allpl-gkedeployup3
+    type: deploy
+    steps:
+      - IN: allpl-manifest3invalidformat
+      - IN: allpl-dopts
+      - IN: allpl-gkecluster
+      - TASK: managed
+        deployMethod: upgrade
+        
+  - name: allpl-gkedeploybg2
+    type: deploy
+    steps:
+      - IN: allpl-manifest3invalidformat
+      - IN: allpl-dopts
+      - IN: allpl-gkecluster
+      
+  - name: allpl-ecsdeployup3
+    type: deploy
+    steps:
+      - IN: allpl-manifest2invalidtag
+      - IN: allpl-dopts
+      - IN: allpl-gkecluster
+      - TASK: managed
+        deployMethod: upgrade
+        
+  - name: allpl-ecsdeploybg4
+    type: deploy
+    steps:
+      - IN: allpl-manifest2invalidtag
+      - IN: allpl-dopts
+      - IN: allpl-ecscluster
