@@ -159,6 +159,16 @@ jobs:
       - TASK:
         - script: ls
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
+    on_success:
+      - NOTIFY: allpl-slack
+      - NOTIFY: allpl-email
+      - script: echo 'infra test'
+      - script: echo 'newtesting success'
+    on_failure:
+      - script: echo 'testing1 failure'
+      - script: echo 'failure runSh'
+      - NOTIFY: allpl-slack
+      - NOTIFY: allpl-email
       
   # - name: allpl-gkedeployup2
   #   type: deploy
