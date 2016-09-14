@@ -150,28 +150,28 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
-  # - name: inrunsh
-  #   type: runSh
-  #   steps:
-  #     - IN: allpl-sample-script
-  #     # versionName: testsha
-  #     - IN: allpl-tg2
-  #     - TASK:
-  #       - script: sl
-  #       - script: ./IN/allpl-sample-script/gitRepo/echo.sh
-  #   on_start:
-  #     - NOTIFY: allpl-slack
-  #     - NOTIFY: allpl-email
-  #   on_success:
-  #     - NOTIFY: allpl-slack
-  #     - NOTIFY: allpl-email
-  #     - script: echo 'infra test'
-  #     - script: echo 'newtesting success'
-  #   on_failure:
-  #     - script: echo 'testing1 failure'
-  #     - script: echo 'failure runSh'
-  #     - NOTIFY: allpl-slack
-  #     - NOTIFY: allpl-email
+  - name: inrunsh
+    type: runSh
+    steps:
+      - IN: allpl-sample-script
+      # versionName: testsha
+      - IN: allpl-tg2
+      - TASK:
+        - script: sl
+        - script: ./IN/allpl-sample-script/gitRepo/echo.sh
+    on_start:
+      - NOTIFY: allpl-slack
+      - NOTIFY: allpl-email
+    on_success:
+      - NOTIFY: allpl-slack
+      - NOTIFY: allpl-email
+      - script: echo 'infra test'
+      - script: echo 'newtesting success'
+    on_failure:
+      - script: echo 'testing1 failure'
+      - script: echo 'failure runSh'
+      - NOTIFY: allpl-slack
+      - NOTIFY: allpl-email
       
   # - name: allpl-gkedeployup2
   #   type: deploy
