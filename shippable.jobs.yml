@@ -173,14 +173,14 @@ jobs:
       - NOTIFY: allpl-slack
       - NOTIFY: allpl-email
       
-  - name: inrunsh2
-    type: runSh
-    steps:
-      - IN: allpl-sample-script
-      # versionName: testsha
-      - IN: allpl-tg2
-      - TASK:
-        - script: ./IN/allpl-sample-script/gitRepo/echo.sh
+  # - name: inrunsh2
+  #   type: runSh
+  #   steps:
+  #     - IN: allpl-sample-script
+  #     # versionName: testsha
+  #     - IN: allpl-tg2
+  #     - TASK:
+  #       - script: ./IN/allpl-sample-script/gitRepo/echo.sh
       
   # - name: allpl-gkedeployup2
   #   type: deploy
