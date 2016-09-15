@@ -157,7 +157,7 @@ jobs:
       # versionName: testsha
       - IN: allpl-tg2
       - TASK:
-        - script: sl
+        - script: ls
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     on_start:
       - NOTIFY: allpl-slack
