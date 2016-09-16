@@ -13,3 +13,8 @@ triggers:
      type: trigger
      version:
        counter: 1
+       
+   - name: allpl-tg4
+     type: trigger
+     version:
+       counter: 0
