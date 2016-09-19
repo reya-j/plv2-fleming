@@ -14,9 +14,11 @@ jobs:
       - release_allpl
     on_start:
       - NOTIFY: allpl-email
+      - NOTIFY: allpl-irc
     on_success:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
+      - NOTIFY: allpl-irc
       
 #MANIFESTS
       
