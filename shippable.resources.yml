@@ -99,6 +99,13 @@ resources:
       recipients: 
         - "varsha@shippable.com"
         - "shiphitchcock1@gmail.com"
+  
+  - name: allpl-irc
+    type: notification
+    integration: irc
+    pointer:
+      recipients:
+        - "chat.freenode.net#test-new"
         
 #INTEGRATION
 
