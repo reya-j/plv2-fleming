@@ -175,7 +175,7 @@ jobs:
       - NOTIFY: allpl-slack
       - NOTIFY: allpl-email
       
-  - name: inrunshtest1
+  - name: INtest
     type: runSh
     steps:
       - IN: allpl-sample-script
