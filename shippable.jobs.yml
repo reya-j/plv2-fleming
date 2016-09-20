@@ -9,7 +9,7 @@ jobs:
         #versionName: testrelease
       - TASK: managed
         bump: beta
-      - IN: allpl-tg3
+     # - IN: allpl-tg3
     flags:
       - release_allpl
     on_start:
