@@ -175,6 +175,16 @@ jobs:
       - NOTIFY: allpl-slack
       - NOTIFY: allpl-email
       
+  - name: testY2
+    type: runSh
+    steps:
+      #- IN: allpl-sample-script
+      # versionName: testsha
+      - IN: allpl-tg2
+      - TASK:
+        - script: ls
+
+      
   - name: INtest
     type: runSh
     steps:
