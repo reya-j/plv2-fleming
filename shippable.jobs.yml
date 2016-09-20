@@ -152,7 +152,7 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
-  - name: inrunsh
+  - name: testY1
     type: runSh
     steps:
       - IN: allpl-sample-script
