@@ -184,7 +184,18 @@ jobs:
       - TASK:
         - script: ls
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
-      
+  - name: outrunsh
+    type: runSh
+    steps:
+      - TASK:
+        - script: "mkdir -p /build/state/" # creating directory 
+        - script: "touch /build/state/allpl-image1.env" # touch will create new empty file with timestamp
+        - script: "echo 'Hello'"
+       # - script: "echo 'versionName=latest' >>  /build/state/rs-img1.env" # this will be adding in the file mongo-image.env
+        #- script: "echo 'anotherProperty=foo' >>  /build/state/rs-img1.env" # next line will be this in the file mongo-image.env
+      - OUT: allpl-image1
+      - IN: allpl-tg2
+       
   # - name: inrunsh2
   #   type: runSh
   #   steps:
