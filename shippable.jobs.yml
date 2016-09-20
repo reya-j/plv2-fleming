@@ -159,7 +159,7 @@ jobs:
       # versionName: testsha
       - IN: allpl-tg2
       - TASK:
-        - script: SL
+        - script: ls
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     on_start:
       - NOTIFY: allpl-slack
@@ -179,9 +179,10 @@ jobs:
     type: runSh
     steps:
       - IN: allpl-sample-script
-        versionNumber: 1000
+        versionNumber: 2
       # versionName: testsha
       - IN: allpl-tg2
+      - IN: testY1
       - TASK:
         - script: ls
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
