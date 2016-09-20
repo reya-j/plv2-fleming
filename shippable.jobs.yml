@@ -179,7 +179,7 @@ jobs:
     type: runSh
     steps:
       - IN: allpl-sample-script
-        versionNumber: 2
+        versionNumber: 1000
       # versionName: testsha
       - IN: allpl-tg2
       - TASK:
