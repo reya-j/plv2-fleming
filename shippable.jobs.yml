@@ -9,16 +9,16 @@ jobs:
         #versionName: testrelease
       - TASK: managed
         bump: beta
-     # - IN: allpl-tg3
+      - IN: allpl-tg3
     flags:
       - release_allpl
     on_start:
       - NOTIFY: allpl-email
-      - NOTIFY: allpl-irc
+      #- NOTIFY: allpl-irc
     on_success:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
-      - NOTIFY: allpl-irc
+      #- NOTIFY: allpl-irc
       
 #MANIFESTS
       
