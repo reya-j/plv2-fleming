@@ -1,6 +1,6 @@
 jobs:
 
-  - name: allpl-manifest1t
+  - name: allpl-manifest1test
     type: manifest
     steps:
       - IN: allpl-imageTEST
