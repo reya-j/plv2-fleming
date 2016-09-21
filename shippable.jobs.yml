@@ -59,7 +59,7 @@ jobs:
     type: manifest
     steps:
       - IN: allpl-image1
-       # versionNumber: 100
+        versionNumber: 1000
       - IN: allpl-tg1
       
   # - name: allpl-manifest2multiimg
