@@ -2,7 +2,7 @@ jobs:
 
 #RELEASE
 
-  - name: allpl-release1
+  - name: allpl-release11
     type: release
     steps:
       - IN: allpl-version
