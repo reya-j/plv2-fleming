@@ -80,6 +80,7 @@ jobs:
       - IN: allpl-dopts
       - IN: allpl-tripubcluster
       - IN: allpl-image1
+      - IN: foo-resource
         #versionNumber: 1000
       
     on_start:
