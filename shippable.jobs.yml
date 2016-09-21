@@ -152,6 +152,92 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
+  - name: testallpl-tpdeploybg
+    type: deploy
+    steps:
+      - IN: allpl-manifest1
+       # switch: off
+      - IN: allpl-dopts
+      - IN: allpl-tripubcluster
+    on_start:
+      - NOTIFY: allpl-email
+    on_success:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+    on_failure:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+      
+  - name: testallpl-ddcdeploy
+    type: deploy
+    steps:
+      - IN: allpl-manifest1
+       # switch: off
+      # - IN: fl-manifest2multiimg
+      #   switch: off
+      - IN: allpl-dopts
+      - IN: allpl-ddccluster
+    on_start:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+    on_success:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+    on_failure:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+      
+  - name: testallpl-dcldeploy
+    type: deploy
+    steps:
+      - IN: allpl-manifest1
+      # - IN: fl-manifest2multiimg
+      #   switch: off
+      - IN: allpl-dopts
+      - IN: allpl-dclcluster
+    on_success:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+    on_failure:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+      
+  - name: testallpl-ecsdeployup1
+    type: deploy
+    steps:
+      - IN: allpl-manifest1
+      #  switch: off
+      # - IN: fl-manifest2multiimg
+      #   switch: off
+      - IN: allpl-dopts
+      - IN: allpl-ecscluster
+      - TASK: managed
+        deployMethod: upgrade
+    on_success:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+    on_failure:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+      
+  - name: testallpl-gkedeployup1
+    type: deploy
+    steps:
+      - IN: allpl-manifest1
+       # switch: off
+      # - IN: fl-manifest2multiimg
+      #   switch: off
+      - IN: allpl-dopts
+      - IN: allpl-gkecluster
+      - TASK: managed
+        deployMethod: upgrade
+    on_success:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+    on_failure:
+      - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
+      
   - name: testY1
     type: runSh
     steps:
