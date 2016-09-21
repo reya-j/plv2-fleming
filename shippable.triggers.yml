@@ -12,7 +12,7 @@ triggers:
    - name: allpl-tg3
      type: trigger
      version:
-       counter: 35
+       counter: 37
        
    - name: allpl-tg4
      type: trigger
