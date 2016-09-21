@@ -1,7 +1,7 @@
 #IMAGES
 
 resources:
-  - name: allpl-image1
+  - name: allpl-image1t
     type: image
     integration: ship-docker
     pointer:
@@ -9,7 +9,7 @@ resources:
     seed:
       versionName: "deploy.1"
   
-  - name: allpl-image2invalidimg
+  - name: allpl-image2invalidimgt
     type: image
     integration: ship-docker
     pointer:
@@ -17,7 +17,7 @@ resources:
     seed:
       versionName: "latest"
       
-  - name: allpl-image3invalidtag
+  - name: allpl-image3invalidtagt
     type: image
     integration: ship-docker
     pointer:
@@ -25,7 +25,7 @@ resources:
     seed:
       versionName: "test13sep"
       
-  - name: allpl-image4invalidformat
+  - name: allpl-image4invalidformatt
     type: image
     integration: ship-docker
     pointer:
@@ -35,33 +35,33 @@ resources:
       
 #CLUSTERS
   
-  - name: allpl-ddccluster
+  - name: allpl-ddcclustert
     type: cluster
     integration: ship-ddc
     pointer:
       sourceName : "nothing" #we can anything because it is mandatory but ddc doesnot have clusters
 
-  - name: allpl-dclcluster
+  - name: allpl-dclclustert
     type: cluster
     integration: ship-dcl
     pointer:
       sourceName : "cluster-dcl"
 
-  - name: allpl-ecscluster
+  - name: allpl-ecsclustert
     type: cluster
     integration: ship-ecs
     pointer:
       sourceName : "testCL"
       region: "us-west-2"
       
-  - name: allpl-gkecluster
+  - name: allpl-gkeclustert
     type: cluster
     integration: ship-gke
     pointer:
       sourceName: "small-cluster" #name of the cluster we are deploying.
       region: "us-east1-d"
       
-  - name: allpl-tripubcluster
+  - name: allpl-tripubclustert
     type: cluster
     integration: ship-tripub
     pointer:
@@ -69,21 +69,21 @@ resources:
       region: "us-east-2"
       
 #LOAD BALANCER
-  - name: allpl-lb
+  - name: allpl-lbt
     type: loadBalancer
     pointer:
       sourceName: v2betatest
       
 #VERSIONS
 
-  - name: allpl-version
+  - name: allpl-versiont
     type: version
     seed:
       versionName: "1.2.123-beta"
       
 #NOTIFICATIONS
       
-  - name: allpl-slack
+  - name: allpl-slackt
     type: notification
     integration: "ship-slackplv2"
     pointer:
@@ -92,7 +92,7 @@ resources:
         - "#pipeline-public"
         - "@shiphitchcock1"
 
-  - name: allpl-email
+  - name: allpl-emailt
     type: notification
     pointer:
       method: email
@@ -105,18 +105,18 @@ resources:
         
 #INTEGRATION
 
-  - name: allpl-dockerintegration
+  - name: allpl-dockerintegrationt
     type: integration
     integration: "ship-docker"
         
 # DOCKER OPTIONS:
 
-  - name: allpl-dopts
+  - name: allpl-doptst
     type: dockerOptions
     version:
       memory: 100
   
-  - name: allpl-dopts2invalid
+  - name: allpl-dopts2invalidt
     type: dockerOptions
     version:
       links:
@@ -124,7 +124,7 @@ resources:
         
 #PARAMS
 
-  - name: allpl-params1
+  - name: allpl-params1t
     type: params
     version:
       params:
@@ -146,21 +146,21 @@ resources:
         
 #REPLICAS
       
-  - name: allpl-scale2
+  - name: allpl-scale2t
     type: replicas
     version:
       count: 2
       
 #TIME
 
-  - name: allpl-timeresource
+  - name: allpl-timeresourcet
     type: time
     seed:
       interval: "8 8 8 8 *"
       
 #GITREPO:
 
-  - name: allpl-sample-script
+  - name: allpl-sample-scriptt
     type: gitRepo
     integration: "github"
     pointer:
