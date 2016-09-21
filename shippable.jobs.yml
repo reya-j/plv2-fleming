@@ -55,6 +55,13 @@ jobs:
        # versionNumber: 100
       - IN: allpl-tg3
       
+  - name: allpl-manifest5
+    type: manifest
+    steps:
+      - IN: allpl-image1
+       # versionNumber: 100
+      - IN: allpl-tg1
+      
   # - name: allpl-manifest2multiimg
   #   type: manifest
   #   steps:
@@ -155,7 +162,7 @@ jobs:
   - name: testallpl-tpdeploybg
     type: deploy
     steps:
-      - IN: allpl-manifest1
+      - IN: allpl-manifest5
        # switch: off
       - IN: allpl-dopts
       - IN: allpl-tripubcluster
@@ -171,7 +178,7 @@ jobs:
   - name: testallpl-ddcdeploy
     type: deploy
     steps:
-      - IN: allpl-manifest1
+      - IN: allpl-manifest5
        # switch: off
       # - IN: fl-manifest2multiimg
       #   switch: off
@@ -190,7 +197,7 @@ jobs:
   - name: testallpl-dcldeploy
     type: deploy
     steps:
-      - IN: allpl-manifest1
+      - IN: allpl-manifest5
       # - IN: fl-manifest2multiimg
       #   switch: off
       - IN: allpl-dopts
@@ -205,7 +212,7 @@ jobs:
   - name: testallpl-ecsdeployup1
     type: deploy
     steps:
-      - IN: allpl-manifest1
+      - IN: allpl-manifest5
       #  switch: off
       # - IN: fl-manifest2multiimg
       #   switch: off
@@ -223,7 +230,7 @@ jobs:
   - name: testallpl-gkedeployup1
     type: deploy
     steps:
-      - IN: allpl-manifest1
+      - IN: allpl-manifest5
        # switch: off
       # - IN: fl-manifest2multiimg
       #   switch: off
