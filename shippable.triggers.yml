@@ -1,20 +1,20 @@
 triggers:
-   - name: allpl-tg1
+   - name: allpl-tg1t
      type: trigger
      version:
        counter: 7
        
-   - name: allpl-tg2
+   - name: allpl-tg2t
      type: trigger
      version:
        counter: 0
        
-   - name: allpl-tg3
+   - name: allpl-tg3t
      type: trigger
      version:
        counter: 37
        
-   - name: allpl-tg4
+   - name: allpl-tg4t
      type: trigger
      version:
        counter: 0
