@@ -2,7 +2,7 @@ triggers:
    - name: allpl-tg1
      type: trigger
      version:
-       counter: 2
+       counter: 3
        
    - name: allpl-tg2
      type: trigger
