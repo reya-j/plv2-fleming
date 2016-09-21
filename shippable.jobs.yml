@@ -2,7 +2,7 @@ jobs:
 
 #RELEASE
 
-  - name: allpl-release
+  - name: allpl-release1
     type: release
     steps:
       - IN: allpl-version
@@ -72,7 +72,7 @@ jobs:
   #         - fl-image2
   #     - IN: fl-tg2
       
-  - name: testallpl-tpdeploybg
+  - name: testallpl-tpdeploybg1
     type: deploy
     steps:
       - IN: allpl-manifest5
@@ -91,7 +91,7 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
-  - name: testallpl-ddcdeploy
+  - name: testallpl-ddcdeploy1
     type: deploy
     steps:
       - IN: allpl-manifest5
@@ -110,7 +110,7 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
-  - name: testallpl-dcldeploy
+  - name: testallpl-dcldeploy1
     type: deploy
     steps:
       - IN: allpl-manifest5
@@ -125,7 +125,7 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
-  - name: testallpl-ecsdeployup1
+  - name: testallpl-ecsdeployup11
     type: deploy
     steps:
       - IN: allpl-manifest5
@@ -143,7 +143,7 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
-  - name: testallpl-gkedeployup1
+  - name: testallpl-gkedeployup11
     type: deploy
     steps:
       - IN: allpl-manifest5
