@@ -1,20 +1,20 @@
 triggers:
-   - name: allpl-tg1
-     type: trigger
-     version:
-       counter: 7
-       
-   - name: allpl-tg2
+   - name: real-tg1
      type: trigger
      version:
        counter: 0
        
-   - name: allpl-tg3
+   - name: real-tg2
      type: trigger
      version:
-       counter: 37
+       counter: 0
        
-   - name: allpl-tg4
+   - name: real-tg3
+     type: trigger
+     version:
+       counter: 0
+       
+   - name: real-tg4
      type: trigger
      version:
        counter: 0
