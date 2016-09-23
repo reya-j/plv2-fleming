@@ -34,26 +34,26 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
-  - name: allpl-manifest2invalidtag
-    type: manifest
-    steps:
-      - IN: allpl-image3invalidtag
-       # versionNumber: 100
-      - IN: allpl-tg2
+  # - name: allpl-manifest2invalidtag
+  #   type: manifest
+  #   steps:
+  #     - IN: allpl-image3invalidtag
+  #     # versionNumber: 100
+  #     - IN: allpl-tg2
       
-  - name: allpl-manifest3invalidformat
-    type: manifest
-    steps:
-      - IN: allpl-image4invalidformat
-       # versionNumber: 100
-      - IN: allpl-tg3
+  # - name: allpl-manifest3invalidformat
+  #   type: manifest
+  #   steps:
+  #     - IN: allpl-image4invalidformat
+  #     # versionNumber: 100
+  #     - IN: allpl-tg3
       
-  - name: allpl-manifest4invalidrepo
-    type: manifest
-    steps:
-      - IN: allpl-image2invalidimg
-       # versionNumber: 100
-      - IN: allpl-tg3
+  # - name: allpl-manifest4invalidrepo
+  #   type: manifest
+  #   steps:
+  #     - IN: allpl-image2invalidimg
+  #     # versionNumber: 100
+  #     - IN: allpl-tg3
       
   - name: allpl-manifest5
     type: manifest
