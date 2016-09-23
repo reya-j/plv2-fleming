@@ -1,175 +1,24 @@
-#IMAGES
 
-resources:
-  - name: allpl-image1
-    type: image
-    integration: ship-docker
-    pointer:
-      sourceName: "shippabledocker/pipelinev2"
-    seed:
-      versionName: "deploy.1"
-  
-  - name: allpl-image2invalidimg
-    type: image
-    integration: ship-docker
-    pointer:
-      sourceName: "shiphitchcock1/betaci"
-    seed:
-      versionName: "latest"
-      
-  - name: allpl-image3invalidtag
-    type: image
-    integration: ship-docker
-    pointer:
-      sourceName: "shiphitchcock1/pipelinev2"
-    seed:
-      versionName: "test13sep"
-      
-  - name: allpl-image4invalidformat
-    type: image
-    integration: ship-docker
-    pointer:
-      sourceName: "shiphitchcock1/pipelinev2"
-    seed:
-      versionName: "test 13sep"
-      
-#CLUSTERS
-  
-  - name: allpl-ddccluster
-    type: cluster
-    integration: ship-ddc
-    pointer:
-      sourceName : "nothing" #we can anything because it is mandatory but ddc doesnot have clusters
-
-  - name: allpl-dclcluster
-    type: cluster
-    integration: ship-dcl
-    pointer:
-      sourceName : "cluster-dcl"
-
-  - name: allpl-ecscluster
-    type: cluster
-    integration: ship-ecs
-    pointer:
-      sourceName : "testCL"
-      region: "us-west-2"
-      
-  - name: allpl-gkecluster
-    type: cluster
-    integration: ship-gke
-    pointer:
-      sourceName: "small-cluster" #name of the cluster we are deploying.
-      region: "us-east1-d"
-      
-  - name: allpl-tripubcluster
-    type: cluster
-    integration: ship-tripub
-    pointer:
-      sourceName: "default" # we can give anything it deploy instances based on region not by cluster name
-      region: "us-east-2"
-      
-#LOAD BALANCER
-  - name: allpl-lb
-    type: loadBalancer
-    pointer:
-      sourceName: v2betatest
       
 #VERSIONS
 
-  - name: allpl-version
+  - name: version-betaecs
     type: version
     seed:
       versionName: "1.2.123-beta"
       
-#NOTIFICATIONS
-      
-  - name: allpl-slack
-    type: notification
-    integration: "ship-slackplv2"
-    pointer:
-      recipients:
-        - "#pipeline-pvt"
-        - "#pipeline-public"
-        - "@shiphitchcock1"
-
-  - name: allpl-email
-    type: notification
-    pointer:
-      method: email
-      recipients: 
-        - "varsha@shippable.com"
-        - "shiphitchcock1@gmail.com"
-        - "sreya@shippable.com"
-  
- 
-        
-#INTEGRATION
-
-  - name: allpl-dockerintegration
-    type: integration
-    integration: "ship-docker"
-        
-# DOCKER OPTIONS:
-
-  - name: allpl-dopts
-    type: dockerOptions
-    version:
-      memory: 100
-  
-  - name: allpl-dopts2invalid
-    type: dockerOptions
-    version:
-      links:
-        - "plv2-manifest8redis_0_0_055d5014-109c-4c84-9bbe-3009a523:testenv"
-        
-#PARAMS
-
-  - name: allpl-params1
-    type: params
-    version:
-      params:
-        MONGO_API_URL: "localhost:28017"
-        TEST: BETA
-        #secure: hfejhf3843hdf3ncd3843hwddxjxieuhff78373dikenckeckckdnckscnscn
-        pipelinev2: fleming
-        
-  - name: foo-resource
-    type: params
-    version:
-      params:
-        foo: bar
-        secure: Xuq1cwGOn1lR1UTMfcwhdPUhJJXr0FeeG/M0/l4v7HFcjIRdrML13//R4RbMWxIeUtmdRWT1y3HRgQSqsRbYRIYF/6rTYH3/eazkowA2hHPZpT8vNfr3tFZJwQeSTf0qGtZOMO1iOacgaFOBgAdBCheJA8tN3ARHapUWk5bxuj7CpIq/LNWEbR/TcNNWaZJkyoWeK6/4U61xNPbVgyL1e73m3WmHPcGwpgTyxW+T1jqgh5m99D3p87UrfTeS6ss5YNA8lkZmFpdYZrq2LIKBMSJuq46Vj1VwRrtRGXYN2eYzmyDvpevciShm6Ai8w8o18eY6dwKrch8PSNloCVDHDA== 
-  # - name: allpl-params2
-  #   type: params
-  #   version:
-  #     params:
-  #       DB_HOST: "ds015700.mlab.com"
-  #       DB_NAME: "ayeaye"
-  #       DB_PORT: "15700"
-  #       DB_USERNAME: "aye0aye"
-  #       DB_PASSWORD: "aye0aye"
-  #       ENVIRONMENT: "test-aws"
-        
-#REPLICAS
-      
-  - name: allpl-scale2
-    type: replicas
-    version:
-      count: 2
-      
-#TIME
-
-  - name: allpl-timeresource
-    type: time
+  - name: version-betagke
+    type: version
     seed:
-      interval: "8 8 8 8 *"
+      versionName: "1.2.123-beta"
       
-#GITREPO:
-
-  - name: allpl-sample-script
-    type: gitRepo
-    integration: "github"
-    pointer:
-      sourceName: "hitchcock-org/sample-script-3"
-      branch: "master"
-    
+  - name: version-betatripub
+    type: version
+    seed:
+      versionName: "1.2.123-beta"
+      
+  - name: version-prodall
+    type: version
+    seed:
+      versionName: "0.0.0"
+      
