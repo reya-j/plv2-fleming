@@ -49,7 +49,7 @@ jobs:
   - name: release-betatripub
     type: release
     steps:
-      - IN: version-betagke
+      - IN: version-betatripub
       - IN: manifest-gke
       - TASK: managed
         bump: beta
