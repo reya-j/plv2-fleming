@@ -46,3 +46,13 @@
     seed:
       versionName: "deploy.3"
       
+  - name: dailyprod-release
+    type: time
+    seed:
+      interval: "1 12 * * *"
+      
+  - name: majorprod-release
+    type: time
+    seed:
+      interval: "1 12 30 * *"
+      
