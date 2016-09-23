@@ -5,17 +5,17 @@
   - name: version-betaecs
     type: version
     seed:
-      versionName: "1.2.123-beta"
+      versionName: "0.0.1-beta"
       
   - name: version-betagke
     type: version
     seed:
-      versionName: "1.2.123-beta"
+      versionName: "0.0.1-beta"
       
   - name: version-betatripub
     type: version
     seed:
-      versionName: "1.2.123-beta"
+      versionName: "0.0.1-beta"
       
   - name: version-prodall
     type: version
