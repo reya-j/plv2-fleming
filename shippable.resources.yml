@@ -56,3 +56,8 @@ resources:
     seed:
       interval: "1 12 30 * *"
       
+  - name: timemajorbeta-release
+    type: time
+    seed:
+      interval: "1 12 30 * *"
+      
