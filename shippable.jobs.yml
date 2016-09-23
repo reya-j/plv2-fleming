@@ -50,7 +50,7 @@ jobs:
     type: release
     steps:
       - IN: version-betatripub
-      - IN: manifest-gke
+      - IN: manifest-tripub
       - TASK: managed
         bump: beta
         
