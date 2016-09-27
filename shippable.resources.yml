@@ -162,7 +162,7 @@ resources:
   - name: allpl-timeresource
     type: time
     seed:
-      interval: "8 8 8 8 *"
+      interval: "*/2 * * * *"
       
 #GITREPO:
 
