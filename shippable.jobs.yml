@@ -6,7 +6,7 @@ jobs:
     type: manifest
     steps:
       - IN: image1
-        switch: off
+        switch: on
       - IN: image2
       - IN: image3
        # versionNumber: 100
@@ -17,7 +17,7 @@ jobs:
     steps:
       - IN: image1
       - IN: image2
-        switch: off
+        switch: on
       - IN: image3
       - IN: real-tg2
       
@@ -27,7 +27,7 @@ jobs:
       - IN: image1
       - IN: image2
       - IN: image3
-        switch: off
+        switch: on
       - IN: real-tg3
       
   - name: release-betaecs
