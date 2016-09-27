@@ -159,7 +159,7 @@ resources:
       
 #TIME
 
-  - name: allpl-timeresource
+  - name: test-time
     type: time
     seed:
       interval: "*/2 * * * *"
