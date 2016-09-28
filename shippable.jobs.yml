@@ -206,6 +206,17 @@ jobs:
       - TASK:
         - script: ls
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
+        
+  - name: testbg1
+    type: deploy
+    steps:
+      - IN: allpl-manifest5
+      #  switch: off
+      # - IN: fl-manifest2multiimg
+      #   switch: off
+      - IN: allpl-dopts
+      - IN: allpl-ecscluster
+
   # - name: outrunsh
   #   type: runSh
   #   steps:
