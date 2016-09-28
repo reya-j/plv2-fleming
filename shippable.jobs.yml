@@ -34,6 +34,13 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
+  - name: allpl-manifestbg1
+    type: manifest
+    steps:
+      - IN: allpl-image1
+       # versionNumber: 100
+      - IN: allpl-tg1
+      
   # - name: allpl-manifest2invalidtag
   #   type: manifest
   #   steps:
@@ -210,10 +217,7 @@ jobs:
   - name: testbg1
     type: deploy
     steps:
-      - IN: allpl-manifest5
-      #  switch: off
-      # - IN: fl-manifest2multiimg
-      #   switch: off
+      - IN: allpl-manifestbg1
       - IN: allpl-dopts
       - IN: allpl-ecscluster
 
