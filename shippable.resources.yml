@@ -51,7 +51,7 @@ resources:
     type: cluster
     integration: ship-ecs
     pointer:
-      sourceName : "testCL"
+      sourceName : "testCL--invalid"
       region: "us-west-2"
       
   - name: allpl-gkecluster
@@ -162,7 +162,7 @@ resources:
   - name: test-time-new
     type: time
     seed:
-      interval: "* * * * *"
+      interval: "*/20 * * * *"
   - name: test-time
     type: time
     seed:
