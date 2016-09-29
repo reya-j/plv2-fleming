@@ -40,7 +40,7 @@ jobs:
     type: deploy
     steps:
       - IN: release-betaecs
-      - IN: allpl-dopts
+      - IN: real-dopts
       - IN: allpl-ecscluster
       - TASK: managed
         deployMethod: bluegreen
