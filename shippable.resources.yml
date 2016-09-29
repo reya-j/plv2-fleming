@@ -29,7 +29,7 @@ resources:
     pointer:
       sourceName: "shippabledocker/pipelinev2"
     seed:
-      versionName: "deploy.1"
+      versionName: "deploy.3"
       
   - name: image2
     type: image
