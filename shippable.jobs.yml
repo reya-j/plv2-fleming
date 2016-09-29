@@ -39,7 +39,7 @@ jobs:
   - name: testbg-ecsdeploy
     type: deploy
     steps:
-      - IN: release-betaecs
+      - IN: manifest-test
       - IN: real-dopts
       - IN: allpl-ecscluster
       - TASK: managed
