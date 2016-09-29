@@ -162,7 +162,7 @@ resources:
   - name: test-time-new
     type: time
     seed:
-      interval: ""
+      interval: "* * * * *"
   - name: test-time
     type: time
     seed:
