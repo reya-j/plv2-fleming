@@ -164,7 +164,7 @@ resources:
     seed:
       interval: "*/5 * * * *"
   - name: test-time
-    type: times
+    type: time
     seed:
       interval: "*/2 * * * *"
       
