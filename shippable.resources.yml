@@ -95,5 +95,5 @@ resources:
   - name: real-scale2
     type: replicas
     version:
-      count: 2
+      count: 1
       
