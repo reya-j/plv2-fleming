@@ -42,7 +42,8 @@ jobs:
   - name: testrp-ecsdeploy
     type: deploy
     steps:
-      - IN: manifest-test      
+      - IN: manifest-test   
+      - IN: real-dopts
       - IN: real-ecscluster
       - TASK: managed
         deployMethod: blueGreen
