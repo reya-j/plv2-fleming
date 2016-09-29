@@ -159,7 +159,7 @@ resources:
       
 #TIME
 
-  - name: test-time-new
+  - name: test-time-new1
     type: time
     seed:
       interval: "tyeyfiuriuirgogokb"
