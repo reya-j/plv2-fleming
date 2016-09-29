@@ -69,7 +69,7 @@ jobs:
       - TASK: managed
         bump: beta
         
-  - name: beta-ecsdeployerror
+  - name: beta-ecsdeploy
     type: deploy
     steps:
       - IN: release-betaecs
