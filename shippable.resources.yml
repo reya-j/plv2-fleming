@@ -79,6 +79,11 @@ resources:
       portMappings:
         - "80:80"
         
+  - name: real-dopts1
+    type: dockerOptions
+    version:
+      memory: 100
+        
   - name: real-param
     type: params
     version:
