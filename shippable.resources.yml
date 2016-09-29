@@ -22,6 +22,7 @@ resources:
     seed:
       versionName: "0.0.0"
       
+ #IMAGES     
   - name: image1
     type: image
     integration: ship-docker
@@ -45,6 +46,16 @@ resources:
       sourceName: "shippabledocker/pipelinev2"
     seed:
       versionName: "deploy.3"
+      
+#CLUSTER 
+  - name: real-ecscluster
+    type: cluster
+    integration: plv2-ecs
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+      
+#TIME
       
   - name: timedailyprod-release
     type: time
