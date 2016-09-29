@@ -51,7 +51,7 @@ resources:
     type: cluster
     integration: ship-ecs
     pointer:
-      sourceName : "testCL"
+      sourceName : "testCL--invalid"
       region: "us-west-2"
       
   - name: allpl-gkecluster
