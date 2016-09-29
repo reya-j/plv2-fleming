@@ -61,3 +61,10 @@ resources:
     seed:
       interval: "1 12 30 * *"
       
+  - name: real-dopts
+    type: dockerOptions
+    version:
+      memory: 100
+      portMappings:
+        - "80:80"
+      
