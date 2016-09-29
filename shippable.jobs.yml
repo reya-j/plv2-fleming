@@ -34,11 +34,10 @@ jobs:
     type: manifest
     steps:
       - IN: image1
-      - IN: real-dopts
-      - IN: real-param
+      - IN: real-dopts1
       - IN: real-tg4
       
-  - name: testbg-ecsdeploy
+  - name: testrp-ecsdeploy
     type: deploy
     steps:
       - IN: manifest-test      
