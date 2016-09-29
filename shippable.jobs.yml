@@ -43,7 +43,7 @@ jobs:
       - IN: real-dopts
       - IN: allpl-ecscluster
       - TASK: managed
-        deployMethod: bluegreen
+        deployMethod: blueGreen
             
   - name: release-betaecs
     type: release
