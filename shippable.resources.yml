@@ -67,4 +67,11 @@ resources:
       memory: 100
       portMappings:
         - "80:80"
+        
+  - name: real-param
+    type: params
+    version:
+      params:
+        MONGO_API_URL: "localhost:28017"
+        TEST: beta
       
