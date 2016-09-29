@@ -214,7 +214,7 @@ jobs:
         - script: ls
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
         
-  - name: testbg5
+  - name: testbg6
     type: deploy
     steps:
       - IN: allpl-manifestbg1
