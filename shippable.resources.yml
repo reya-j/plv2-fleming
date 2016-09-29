@@ -101,7 +101,7 @@ resources:
     type: cluster
     integration: plv2-ecs
     pointer:
-      sourceName : "testCL--invalid"
+      sourceName : "testCL"
       region: "us-west-2"
       
   - name: fl-gkecluster
