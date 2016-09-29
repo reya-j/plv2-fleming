@@ -90,4 +90,9 @@ resources:
       params:
         MONGO_API_URL: "localhost:28017"
         TEST: beta
+        
+  - name: real-scale2
+    type: replicas
+    version:
+      count: 2
       
