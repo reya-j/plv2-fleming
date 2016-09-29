@@ -80,7 +80,7 @@ jobs:
   #         - fl-image2
   #     - IN: fl-tg2
       
-  - name: testallpl-tpdeploybg1
+  - name: testallpl-tpdeployNOTIFY
     type: deploy
     steps:
       - IN: allpl-manifest5
@@ -170,7 +170,7 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
-  - name: testY1
+  - name: testnotify
     type: runSh
     steps:
       - IN: allpl-sample-script
