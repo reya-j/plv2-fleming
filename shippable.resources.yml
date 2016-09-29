@@ -162,7 +162,7 @@ resources:
   - name: test-time-new
     type: time
     seed:
-      interval: "*/20 *536587 * * vjiy875652145*"
+      interval: "tyeyfiuriuirgogokb"
   - name: test-time
     type: time
     seed:
