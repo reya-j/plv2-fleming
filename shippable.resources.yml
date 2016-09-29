@@ -163,6 +163,10 @@ resources:
     type: time
     seed:
       interval: "*/5 * * * *"
+  - name: test-time
+    type: times
+    seed:
+      interval: "*/2 * * * *"
       
 #GITREPO:
 
