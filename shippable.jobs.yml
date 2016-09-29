@@ -30,6 +30,21 @@ jobs:
         switch: off
       - IN: real-tg3
       
+  - name: manifest-test
+    type: manifest
+    steps:
+      - IN: image1
+      - IN: real-tg4
+      
+  - name: testbg-ecsdeploy
+    type: deploy
+    steps:
+      - IN: release-betaecs
+      - IN: allpl-dopts
+      - IN: allpl-ecscluster
+      - TASK: managed
+        deployMethod: bluegreen
+      
   - name: release-betaecs
     type: release
     steps:
