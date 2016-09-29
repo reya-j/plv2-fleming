@@ -50,7 +50,7 @@ resources:
 #CLUSTER 
   - name: real-ecscluster
     type: cluster
-    integration: plv2-ecs
+    integration: ship-ecs
     pointer:
       sourceName : "testCL"
       region: "us-west-2"
