@@ -74,6 +74,7 @@ jobs:
     steps:
       - IN: version-betagke
       - IN: manifest-gke
+      - IN: test-time-3
       - TASK: managed
         bump: beta
         
