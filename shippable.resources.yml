@@ -92,6 +92,15 @@ resources:
         TEST: beta
         SHIP: release
         
+  - name: real-param1
+    type: params
+    version:
+      params:
+        MONGO_API_URL: "localhost:28987"
+        TEST: prod
+        SHIP: manifest
+        BETA: qhode
+        
   - name: real-scale2
     type: replicas
     version:
