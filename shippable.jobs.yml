@@ -48,7 +48,7 @@ jobs:
       - IN: real-scale1
       - IN: real-ecscluster
       - TASK: managed
-        deployMethod: blueGreen
+        deployMethod: bluegreen
   
  # - name: testrp-ecsdeploy2
   #  type: deploy
@@ -74,7 +74,7 @@ jobs:
     steps:
       - IN: version-betagke
       - IN: manifest-gke
-      - IN: test-time-3
+      #- IN: test-time-3
       - TASK: managed
         bump: beta
         
