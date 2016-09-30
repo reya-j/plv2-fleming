@@ -22,14 +22,15 @@ jobs:
       
 #MANIFESTS
       
-  - name: allpl-manifest1
+  - name: allpl-manifestN1
     type: manifest
     steps:
       - IN: allpl-image1
-       # versionNumber: 100
+        versionNumber: 100
       - IN: allpl-tg1
     on_start:
       - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
     on_success:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
