@@ -104,5 +104,10 @@ resources:
   - name: real-scale2
     type: replicas
     version:
+      count: 2
+      
+  - name: real-scale1
+    type: replicas
+    version:
       count: 1
       
