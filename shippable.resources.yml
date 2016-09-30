@@ -88,7 +88,7 @@ resources:
     version:
       memory: 100
       portMappings:
-        - "9090:9090"
+        - "9099:9099"
         
   - name: real-param
     type: params
