@@ -48,7 +48,7 @@ jobs:
       - IN: real-scale1
       - IN: real-ecscluster
       - TASK: managed
-        deployMethod: replace
+        deployMethod: bluegreen
   
  # - name: testrp-ecsdeploy2
   #  type: deploy
