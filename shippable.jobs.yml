@@ -44,7 +44,7 @@ jobs:
     steps:
       - IN: manifest-test   
       #- IN: allpl-dopts2invalid
-      - IN: real-param1
+   #   - IN: real-param1
       - IN: real-scale1
       - IN: real-ecscluster
       - TASK: managed
