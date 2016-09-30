@@ -36,7 +36,7 @@ jobs:
       - IN: image1
       - IN: real-dopts1
       - IN: real-param
-      - IN: real-scale2
+      - IN: real-scale1
       - IN: real-tg4
       
   - name: testrp-ecsdeploy1
@@ -45,7 +45,7 @@ jobs:
       - IN: manifest-test   
       #- IN: real-dopts
       #- IN: real-param1
-      #- IN: real-scale1
+      #- IN: real-scale2
       - IN: real-ecscluster
       - TASK: managed
         deployMethod: replace
