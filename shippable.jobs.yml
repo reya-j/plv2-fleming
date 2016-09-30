@@ -178,7 +178,7 @@ jobs:
       - IN: allpl-sample-script
       # versionName: testsha
       - IN: allpl-tg2
-      - IN: test-time-1
+      #- IN: test-time-1
       - TASK:
         - script: ls
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
@@ -231,7 +231,7 @@ jobs:
       - IN: allpl-image1
        # versionNumber: 100
       - IN: allpl-tg1
-      - IN: test-time-1
+     # - IN: test-time-1
 
   # - name: outrunsh
   #   type: runSh
