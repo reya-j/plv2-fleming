@@ -52,8 +52,8 @@ resources:
     type: cluster
     integration: ship-ecs
     pointer:
-      sourceName : "testingciplv2"
-      region: "us-west-2"
+      sourceName : "testCL"
+      region: "us-east-1"
       
 #TIME
       
