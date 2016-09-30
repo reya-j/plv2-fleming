@@ -145,6 +145,7 @@ jobs:
       #   switch: off
       - IN: allpl-dopts
       - IN: allpl-ecscluster
+      - IN: test-time-1
       - TASK: managed
         deployMethod: upgrade
     on_success:
