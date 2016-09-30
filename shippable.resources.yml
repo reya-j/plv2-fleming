@@ -71,6 +71,10 @@ resources:
     type: time
     seed:
       interval: "1 12 30 * *"
+  - name: test-time-3
+    type: time
+    seed:
+      interval: "*/5 * * * *"
       
   - name: real-dopts
     type: dockerOptions
