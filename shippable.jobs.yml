@@ -39,7 +39,7 @@ jobs:
       - IN: real-scale1
       - IN: real-tg4
       
-  - name: testrp-ecsdeploy1
+  - name: testrp-ecsdeploy2
     type: deploy
     steps:
       - IN: manifest-test   
