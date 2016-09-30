@@ -37,7 +37,7 @@ resources:
     pointer:
       sourceName: "shippabledocker/pipelinev2"
     seed:
-      versionName: "deploy.2"
+      versionName: "deploy.3"
       
   - name: image3
     type: image
@@ -45,7 +45,7 @@ resources:
     pointer:
       sourceName: "shippabledocker/pipelinev2"
     seed:
-      versionName: "deploy.3"
+      versionName: "deploy.2"
       
 #CLUSTER 
   - name: real-ecscluster
