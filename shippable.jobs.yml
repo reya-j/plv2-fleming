@@ -180,7 +180,7 @@ jobs:
       - IN: allpl-tg2
       - TASK:
         - script: ls
-        - script: ./IN/allpl-sample-script3/gitRepo/echo.sh
+        - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     on_start:
       - NOTIFY: allpl-slack
       - NOTIFY: allpl-email
