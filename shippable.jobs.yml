@@ -37,19 +37,8 @@ jobs:
       - IN: real-dopts1
       - IN: real-param
       - IN: real-scale1
-      - IN: real-tg4
-      
-  - name: testrp-ecsdeploy1
-    type: deploy
-    steps:
-      - IN: manifest-test   
-      #- IN: allpl-dopts2invalid
-      - IN: real-param1
-      - IN: real-scale1
-      - IN: real-ecscluster
-      - TASK: managed
-        deployMethod: replace
-        
+      - IN: real-tg4      
+  
   - name: testrp-ecsdeploy2
     type: deploy
     steps:
