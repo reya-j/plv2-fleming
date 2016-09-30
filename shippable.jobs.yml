@@ -34,7 +34,7 @@ jobs:
     type: manifest
     steps:
       - IN: image1
-      - IN: real-dopts1
+      - IN: real-dopts
       - IN: real-param
       - IN: real-scale1
       - IN: real-tg4      
