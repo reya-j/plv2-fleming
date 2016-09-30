@@ -231,6 +231,7 @@ jobs:
       - IN: allpl-image1
        # versionNumber: 100
       - IN: allpl-tg1
+      - IN: test-time-1
 
   # - name: outrunsh
   #   type: runSh
