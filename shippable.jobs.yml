@@ -35,20 +35,20 @@ jobs:
     steps:
       - IN: image1
       - IN: real-dopts1
-      - IN: real-param
-      - IN: real-scale2
+     # - IN: real-param
+      #- IN: real-scale2
       - IN: real-tg4
       
-  - name: testrp-ecsdeploy
+  - name: testrp-ecsdeploy1
     type: deploy
     steps:
       - IN: manifest-test   
-      - IN: real-dopts
-      - IN: real-param1
-      - IN: real-scale1
+      #- IN: real-dopts
+      #- IN: real-param1
+      #- IN: real-scale1
       - IN: real-ecscluster
       - TASK: managed
-        deployMethod: blueGreen
+        deployMethod: replace
             
   - name: release-betaecs
     type: release
