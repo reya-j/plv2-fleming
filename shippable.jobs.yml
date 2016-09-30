@@ -80,7 +80,7 @@ jobs:
   #         - fl-image2
   #     - IN: fl-tg2
       
-  - name: testallpl-tpdeployNOTIFY
+  - name: testallpl-tpdeployNOTIFY1
     type: deploy
     steps:
       - IN: allpl-manifest5
@@ -93,6 +93,7 @@ jobs:
       
     on_start:
       - NOTIFY: allpl-email
+      - NOTIFY: allpl-slack
     on_success:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
@@ -170,7 +171,7 @@ jobs:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
-  - name: testnotify
+  - name: testnotify1
     type: runSh
     steps:
       - IN: allpl-sample-script
