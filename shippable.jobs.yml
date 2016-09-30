@@ -35,7 +35,7 @@ jobs:
     steps:
       - IN: image1
       - IN: real-dopts1
-     # - IN: real-param
+      - IN: real-param
       #- IN: real-scale2
       - IN: real-tg4
       
