@@ -92,7 +92,7 @@ resources:
       params:
         MONGO_API_URL: "localhost:28017"
         TEST: beta
-       # SHIP: release
+        SHIP: release
         
   - name: real-param1
     type: params
