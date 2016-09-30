@@ -52,7 +52,7 @@ resources:
     type: cluster
     integration: ship-ecs
     pointer:
-      sourceName : "testCL"
+      sourceName : "loadBalanceTest"
       region: "us-east-1"
       
 #TIME
