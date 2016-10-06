@@ -207,17 +207,17 @@ jobs:
         - script: ls
 
       
-  - name: INtest
-    type: runSh
-    steps:
-      - IN: allpl-sample-script
-        versionNumber: 2
+ # - name: INtest
+  #  type: runSh
+   # steps:
+    #  - IN: allpl-sample-script
+     #   versionNumber: 2
       # versionName: testsha
-      - IN: allpl-tg2
-      - IN: testY1
-      - TASK:
-        - script: ls
-        - script: ./IN/allpl-sample-script/gitRepo/echo.sh
+      #- IN: allpl-tg2
+      #- IN: testY1
+      #- TASK:
+       # - script: ls
+        #- script: ./IN/allpl-sample-script/gitRepo/echo.sh
         
   - name: testbg7
     type: deploy
