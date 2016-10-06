@@ -226,12 +226,12 @@ jobs:
       - IN: allpl-dopts
       - IN: allpl-ecscluster
       
-  - name: allpl-faile test
-    type: manifest
-    steps:
-      - IN: allpl-image1
+  #- name: allpl-faile test
+   # type: manifest
+    #steps:
+     # - IN: allpl-image1
        # versionNumber: 100
-      - IN: allpl-tg1
+      #- IN: allpl-tg1
      # - IN: test-time-1
 
   # - name: outrunsh
