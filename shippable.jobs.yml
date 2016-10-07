@@ -350,3 +350,18 @@ jobs:
   #     - IN: allpl-manifest4invalidrepo
   #     - IN: allpl-dopts
   #     - IN: allpl-ecscluster
+  
+  - name: test-imagejob
+    type: image
+    integration: plv2-docker
+    pointer:
+      sourceName: "shippabledocker/pipelinev2"
+    seed:
+      versionName: "deploy.1"
+      
+  - name: test-versionjob
+    type: version
+    seed:
+      versionName: "1.3.123-beta"
+      
+  
