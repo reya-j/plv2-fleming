@@ -27,7 +27,7 @@ jobs:
   - name: testallpl-ecsdeployup11
     type: deploy
     steps:
-      - IN: allpl-manifest5
+      - IN: allpl-manifestN1
       #  switch: off
       # - IN: fl-manifest2multiimg
       #   switch: off
