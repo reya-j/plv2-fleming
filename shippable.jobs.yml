@@ -50,10 +50,10 @@ jobs:
   - name: testallpl-dcldeploy2
     type: deploy
     steps:
-      - IN: allpl-manifestN11
+     # - IN: allpl-manifestN11
       # - IN: fl-manifest2multiimg
       #   switch: off
-      #- IN: allpl-dopts
+      - IN: allpl-dopts
       - IN: allpl-dclcluster
     on_success:
       - NOTIFY: allpl-email
