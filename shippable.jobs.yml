@@ -28,6 +28,7 @@ jobs:
       - IN: allpl-image1
        # versionNumber: 100
       - IN: allpl-tg1
+      - TASK: managed
     on_start:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
