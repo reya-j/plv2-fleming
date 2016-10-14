@@ -60,5 +60,5 @@ jobs:
       - NOTIFY: allpl-slack
     on_failure:
       - NOTIFY: allpl-email
-      - NOTIFY: allpl-slack
+    #  - NOTIFY: allpl-slack
    
