@@ -84,8 +84,8 @@ resources:
 #NOTIFICATIONS
       
   - name: allpl-slack
-  #  type: notification
-    integration: "ship-slack"
+    type: notification
+    integration: "ship-slacksre"
     pointer:
       recipients:
         - "#pipeline-pvt"
