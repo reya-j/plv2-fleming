@@ -104,12 +104,7 @@ pointer:
         - "shiphitchcock4@gmail.com"
         
         
-  - name: allpl-email2
-    type: notification
-    pointer:
-      method: email
-      recipients: 
-        - "sreyaj10@gmail.com"
+  
  
         
 #INTEGRATION
