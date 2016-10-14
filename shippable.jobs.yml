@@ -47,7 +47,7 @@ jobs:
       - NOTIFY: allpl-slack
       - NOTIFY: allpl-email
       
-  - name: testallpl-dcldeploy45
+  - name: testallpl-dcldeployn1
     type: deploy
     steps:
      # - IN: allpl-manifestN11
