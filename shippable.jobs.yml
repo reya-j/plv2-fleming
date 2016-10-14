@@ -2,16 +2,16 @@ jobs:
 
 #RELEASE
 
-   - name: allpl-release11
-     type: release
-     steps:
-       - IN: allpl-version
+  - name: allpl-release11
+    type: release
+    steps:
+      - IN: allpl-version
          #versionName: testrelease
-       - TASK: managed
-         bump: beta
-       - IN: allpl-tg3
-     flags:
-       - release_allpl
+      - TASK: managed
+        bump: beta
+      - IN: allpl-tg3
+    flags:
+      - release_allpl
   #   on_start:
   #     - NOTIFY: allpl-email
   #     #- NOTIFY: allpl-irc
@@ -29,10 +29,10 @@ jobs:
        # versionNumber: 100
       - IN: allpl-tg1
       - TASK: managed
-    on_start:
+     on_start:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
-    on_success:
+     on_success:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
