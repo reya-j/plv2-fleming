@@ -95,7 +95,7 @@ resources:
 
   - name: allpl-email
     type: notification
-    pointer:
+pointer:
       method: email
       recipients: 
         - "varsha@shippable.com"
