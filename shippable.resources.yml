@@ -86,7 +86,7 @@ resources:
   - name: allpl-slack
     type: notification
     integration: "ship-slack"
-   # pointer:
+    pointer:
       recipients:
         - "#pipeline-pvt"
         - "#pipeline-public"
@@ -95,8 +95,8 @@ resources:
 
   - name: allpl-email
     type: notification
-    #pointer:
-      method: email
+    pointer:
+     # method: email
       recipients: 
         - "varsha@shippable.com"
         - "shiphitchcock1@gmail.com"
