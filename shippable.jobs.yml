@@ -38,6 +38,7 @@ jobs:
         deployMethod: upgrade
     on_success:
       - NOTIFY: allpl-email
+      - NOTIFY: allpl-email2
       - NOTIFY: allpl-slack
     on_failure:
       - NOTIFY: allpl-email
