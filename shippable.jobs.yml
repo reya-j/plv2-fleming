@@ -29,10 +29,10 @@ jobs:
        # versionNumber: 100
       - IN: allpl-tg1
       - TASK: managed
-     on_start:
+    on_start:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
-     on_success:
+    on_success:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
       
