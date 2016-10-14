@@ -84,7 +84,7 @@ resources:
 #NOTIFICATIONS
       
   - name: allpl-slack
-    type: notification
+    type: notifications
     integration: "ship-slack"
     pointer:
       recipients:
@@ -93,7 +93,7 @@ resources:
         - "@shiphitchcock1"
 
   - name: allpl-email
-    type: notification
+    type: notifications
     pointer:
       method: email
       recipients: 
