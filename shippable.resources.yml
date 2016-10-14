@@ -91,6 +91,7 @@ resources:
         - "#pipeline-pvt"
         - "#pipeline-public"
         - "@shiphitchcock1"
+        - "#new"
 
   - name: allpl-email
     type: notification
