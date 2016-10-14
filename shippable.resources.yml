@@ -96,14 +96,20 @@ resources:
   - name: allpl-email
     type: notification
     pointer:
-      method: email21
+      method: email
       recipients: 
         - "varsha@shippable.com"
         - "shiphitchcock1@gmail.com"
         - "sreya@shippable.com"
         - "shiphitchcock4@gmail.com"
+        
+        
+  - name: allpl-email2
+    type: notification
+    pointer:
+      method: email
+      recipients: 
         - "sreyaj10@gmail.com"
-  
  
         
 #INTEGRATION
