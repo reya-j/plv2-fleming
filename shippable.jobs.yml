@@ -54,6 +54,7 @@ jobs:
       # - IN: fl-manifest2multiimg
       #   switch: off
       - IN: allpl-dopts
+      - IN: foo-resource
       - IN: allpl-dclcluster
     on_success:
       - NOTIFY: allpl-email
