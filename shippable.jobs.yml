@@ -73,7 +73,7 @@ jobs:
       - TASK:
         - script: ls
        # - script: pwd
-       # - script: ./IN/allpl-sample-script/gitRepo/echo.sh
+        - script: ./IN/allpl-sample-script3/gitRepo/echo.sh
     on_start:
       - NOTIFY: allpl-slack
       - NOTIFY: allpl-email
