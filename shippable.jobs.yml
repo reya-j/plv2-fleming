@@ -67,8 +67,16 @@ jobs:
     type: runSh
   #  serial: true
     steps:
-      #- IN: allpl-sample-script
-      #- IN: allpl-tg2
+      - IN: allpl-sample-script
+      - IN: allpl-tg2
+      - TASK:
+        - script: ./IN/allpl-sample-script/gitRepo/echo.sh
+  - name: runShTEST
+    type: runSh
+  #  serial: true
+    steps:
+     # - IN: allpl-sample-script
+     # - IN: allpl-tg2
       - TASK:
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     
