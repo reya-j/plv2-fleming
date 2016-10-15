@@ -67,7 +67,8 @@ jobs:
     type: runSh
     steps:
       - IN: allpl-sample-script
-      # versionName: testsha
+       # versionName: testsha
+        versionNumber: 2
       - IN: allpl-tg2
       - IN: foo-resource
       #- IN: test-time-1
