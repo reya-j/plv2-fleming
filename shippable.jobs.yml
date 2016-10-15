@@ -71,8 +71,8 @@ jobs:
       - IN: allpl-tg2
       #- IN: test-time-1
       - TASK:
-        - script: ls
-        - script: pwd
+       # - script: ls
+       # - script: pwd
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     on_start:
       - NOTIFY: allpl-slack
@@ -82,6 +82,7 @@ jobs:
       - NOTIFY: allpl-email
       - script: echo 'infra test'
       - script: echo 'newtesting success'
+      - script: pwd
     on_failure:
       - script: echo 'testing1 failure'
       - script: echo 'failure runSh'
