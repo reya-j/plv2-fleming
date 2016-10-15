@@ -76,11 +76,11 @@ jobs:
     steps:
       - IN: allpl-sample-script
       - IN: allpl-version
-      - IN: allpl-manifestN11sreya
+      - IN: allpl-manifestN11
       - IN: allpl-dopts
       - IN: allpl-scale2 #REPLICA
       - IN: allpl-image1
-      - IN: testallpl-ecsdeployup11
+      - IN: testallpl-ecsdeployup11sreya
      
         #versionName: theyrev
        # versionNumber: 298000
