@@ -81,7 +81,7 @@ jobs:
       - IN: allpl-scale2 #REPLICA
       - OUT: allpl-image1
       - IN: testallpl-ecsdeployup11
-      - IN: testnotify4
+    
      
         #versionName: theyrev
        # versionNumber: 298000
