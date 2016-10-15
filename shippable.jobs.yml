@@ -79,9 +79,9 @@ jobs:
         #versionName: theyrev
        # versionNumber: 298000
       - IN: allpl-tg2
-    
+     
       #- IN: test-time-1
-      #- TASK:
+      - TASK:
         - script: ls
        # - script: pwd
         - script: echo "$foo"
