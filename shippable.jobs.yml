@@ -80,12 +80,12 @@ jobs:
       - IN: allpl-tg2
     
       #- IN: test-time-1
-      - TASK:
+      #- TASK:
         - script: ls
        # - script: pwd
         - script: echo "$foo"
         - script: echo "$m1"
-        - script: ./IN/allpl-sample-script/allpl-sample-script/gitRepo/echo.sh
+        - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     #on_start:
      # - NOTIFY: allpl-slack
      # - NOTIFY: allpl-email
