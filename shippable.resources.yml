@@ -140,7 +140,7 @@ resources:
   - name: foo-resource
     type: params
     version:
-      params:
+      params: 
         foo=bar
        # koo: car
         #m1=one
