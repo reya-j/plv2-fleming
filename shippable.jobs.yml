@@ -71,14 +71,7 @@ jobs:
       - IN: allpl-tg2
       - TASK:
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
-  - name: runShTEST
-    type: runSh
-  #  serial: true
-    steps:
-     # - IN: allpl-sample-script
-     # - IN: allpl-tg2
-      - TASK:
-        - script: ./IN/allpl-sample-script/gitRepo/echo.sh
+  
     
   - name: testnotify4
     type: runSh
@@ -87,6 +80,7 @@ jobs:
       - IN: allpl-version
       - IN: allpl-manifestN11
       - IN: allpl-dopts
+        switch: off
       - IN: allpl-scale2 #REPLICA
       - IN: allpl-image1
       #- OUT: allpl-image2sreya
