@@ -104,7 +104,7 @@ jobs:
      # - NOTIFY: allpl-email
      # - script: echo 'test start'
     on_success:
-     - ls
+      - echo 'the'
      # - NOTIFY: allpl-slack
      # - NOTIFY: allpl-email
      # - script: echo 'infra test'
@@ -112,7 +112,8 @@ jobs:
      # - script: pwd
      # - script: ls
      # - script: ./IN/allpl-sample-script/gitRepo/echo.sh
-    #on_failure:
+    on_failure:
+      - echo 'new'
      # - script: echo 'testing1 failure'
      # - script: echo 'failure runSh'
      # - script: ls
