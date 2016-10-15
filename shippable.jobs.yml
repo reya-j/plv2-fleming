@@ -78,8 +78,8 @@ jobs:
       - IN: allpl-version
       - IN: allpl-manifestN11
       - IN: allpl-dopts
-      - IN: allpl-scale2 #REPLICA
-      - IN: allpl-image1SREYA
+      - IN: allpl-scale2SREYA #REPLICA
+      - IN: allpl-image1
       - IN: testallpl-ecsdeployup11
      
         #versionName: theyrev
