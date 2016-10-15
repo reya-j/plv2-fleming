@@ -71,8 +71,7 @@ jobs:
       - TASK:
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     
-  - 
-  name: testnotify4
+  - name: testnotify4
     type: runSh
     steps:
       - IN: allpl-sample-script
