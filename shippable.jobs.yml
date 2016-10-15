@@ -75,7 +75,11 @@ jobs:
     type: runSh
     steps:
       - IN: allpl-sample-script
-      - IN: Sreya
+      - IN: allpl-version
+      - IN: allpl-manifestN11
+      - IN: allpl-dopts
+      - IN: allpl-scale2 #REPLICA
+      - IN: allpl-image1
         #versionName: theyrev
        # versionNumber: 298000
       - IN: allpl-tg2
