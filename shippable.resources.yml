@@ -137,11 +137,11 @@ resources:
         #secure: hfejhf3843hdf3ncd3843hwddxjxieuhff78373dikenckeckckdnckscnscn
         pipelinev2: fleming
         
-  - name: foo-resource
-    type: params
-    version:
-      params: 
-        foo=bar
+  #- name: foo-resource
+   # type: params
+   # version:
+    #  params: 
+     #   foo=bar
        # koo: car
         #m1=one
        # secure: L8koo3Vj6ZVeUDe7SQ0eqJO5Ps7HVkFi/NeBhzXztglAtWjWK+zKYcwLfgQ61xcwF/FiP1BVCGJPNzH1hdTcnUVI/pxnMa4X74UNxCjlvPocmjMK1KHLXVOUH2LJ5iCP/c4PBYR+QI3J1eEz/N5ou2womkPTr3JBJ37PLe5tHStumoi0jtxHy63YYIK/NQs7ZAfTUAofW6bZQXfpoPp+nnECDprwiOW8ci+o7/DbcGAGFrph5UyOvfElFF4tS2SA0+G9BZmSM+qB9d5IxQLOigU/30WRe1gGR6KwVrxD9wBjnJ8Q36rjD/HVxHLJIaocH+LDeohxcfGaWKQqJZd1hQ==
