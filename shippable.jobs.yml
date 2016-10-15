@@ -88,6 +88,7 @@ jobs:
     on_failure:
       - script: echo 'testing1 failure'
       - script: echo 'failure runSh'
+      - script: ls
       - NOTIFY: allpl-slack
       - NOTIFY: allpl-email
    
