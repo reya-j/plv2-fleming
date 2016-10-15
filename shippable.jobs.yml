@@ -73,7 +73,7 @@ jobs:
       - TASK:
        # - script: ls
        # - script: pwd
-        - script: ./IN/allpl-sample-script/gitRepo/echo.sh
+       # - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     on_start:
       - NOTIFY: allpl-slack
       - NOTIFY: allpl-email
@@ -84,7 +84,7 @@ jobs:
       - script: echo 'newtesting success'
       - script: pwd
       - script: ls
-      - script: ./IN/allpl-sample-script/gitRepo/echo.sh
+     # - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     on_failure:
       - script: echo 'testing1 failure'
       - script: echo 'failure runSh'
