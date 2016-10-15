@@ -103,7 +103,8 @@ jobs:
      # - NOTIFY: allpl-slack
      # - NOTIFY: allpl-email
      # - script: echo 'test start'
-    #on_success:
+    on_success:
+     - ls
      # - NOTIFY: allpl-slack
      # - NOTIFY: allpl-email
      # - script: echo 'infra test'
