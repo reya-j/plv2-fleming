@@ -142,7 +142,8 @@ resources:
     version:
       params:
         foo: bar
-        #secure: Xuq1cwGOn1lR1UTMfcwhdPUhJJXr0FeeG/M0/l4v7HFcjIRdrML13//R4RbMWxIeUtmdRWT1y3HRgQSqsRbYRIYF/6rTYH3/eazkowA2hHPZpT8vNfr3tFZJwQeSTf0qGtZOMO1iOacgaFOBgAdBCheJA8tN3ARHapUWk5bxuj7CpIq/LNWEbR/TcNNWaZJkyoWeK6/4U61xNPbVgyL1e73m3WmHPcGwpgTyxW+T1jqgh5m99D3p87UrfTeS6ss5YNA8lkZmFpdYZrq2LIKBMSJuq46Vj1VwRrtRGXYN2eYzmyDvpevciShm6Ai8w8o18eY6dwKrch8PSNloCVDHDA== 
+        #m1=one
+        secure: orb5NZfXW1dZWbggQbeg5xXBLBKKZzsxnjrGeemFVC4VnQ3iekiO0C2ISH8UJL4ioYGNxZWreLqXJauCOZvnL2Hj8cbtLzAzP6bN3dxaOJb7VGLAKUpVx2GZv758l4j9mT6dD+41KrZ03f5j0Z9eubMbK3zkSUBor1L00YUGIQ7kYAxoDAu+OJoCZQwd8OtD8bX5MRp+ToXHDE361GFODpqHSA0D3S0SmukzpihqJwQ8mELCg+sQfE9+0933uT3NgZkbqNFPeuDBd+z1zFkMHFBpLxsCbPdhv+4IP3OvNHlpx1UZ6AD/TEMN7WLX1E3xlKLbE2XMJcPoY3YI3YQEPA==
   # - name: allpl-params2
   #   type: params
   #   version:
