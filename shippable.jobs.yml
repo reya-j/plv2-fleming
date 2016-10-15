@@ -65,7 +65,7 @@ jobs:
     #  - NOTIFY: allpl-slack
   - name: runShkn1
     type: runSh
-    serial: true
+    serial: false
     steps:
       - IN: allpl-sample-script
       - IN: allpl-tg2
@@ -75,7 +75,7 @@ jobs:
     
   - name: testnotify4
     type: runSh
-    serial: true
+    serial: false
     steps:
       - IN: allpl-sample-script
       - IN: allpl-version
