@@ -74,7 +74,7 @@ jobs:
     
   - name: testnotify4
     type: runSh
-    steps:
+   # steps:
       - IN: allpl-sample-script
       - IN: allpl-version
       - IN: allpl-manifestN11
