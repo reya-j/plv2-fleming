@@ -62,4 +62,28 @@ jobs:
     on_failure:
       - NOTIFY: allpl-email
     #  - NOTIFY: allpl-slack
+    
+  - name: testnotify4
+    type: runSh
+    steps:
+      - IN: allpl-sample-script
+      # versionName: testsha
+      - IN: allpl-tg2
+      #- IN: test-time-1
+      - TASK:
+        - script: ls
+        - script: ./IN/allpl-sample-script/gitRepo/echo.sh
+    on_start:
+      - NOTIFY: allpl-slack
+      - NOTIFY: allpl-email
+    on_success:
+      - NOTIFY: allpl-slack
+      - NOTIFY: allpl-email
+      - script: echo 'infra test'
+      - script: echo 'newtesting success'
+    on_failure:
+      - script: echo 'testing1 failure'
+      - script: echo 'failure runSh'
+      - NOTIFY: allpl-slack
+      - NOTIFY: allpl-email
    
