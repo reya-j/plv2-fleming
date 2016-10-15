@@ -182,6 +182,6 @@ resources:
     type: gitRepo
     integration: "github"
     pointer:
-      sourceName: "hitchcock-org/sample-script-3"
+      sourceName: "shiphitchcock4/sample-script-3"
       branch: "master"
     
