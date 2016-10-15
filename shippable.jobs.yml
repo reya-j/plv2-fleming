@@ -74,22 +74,22 @@ jobs:
         - script: ls
        # - script: pwd
         - script: ./IN/allpl-sample-script3/gitRepo/echo.sh
-    on_start:
-      - NOTIFY: allpl-slack
-      - NOTIFY: allpl-email
-      - script: echo 'test start'
-    on_success:
-      - NOTIFY: allpl-slack
-      - NOTIFY: allpl-email
-      - script: echo 'infra test'
-      - script: echo 'newtesting success'
-      - script: pwd
-      - script: ls
+    #on_start:
+     # - NOTIFY: allpl-slack
+     # - NOTIFY: allpl-email
+     # - script: echo 'test start'
+    #on_success:
+     # - NOTIFY: allpl-slack
+     # - NOTIFY: allpl-email
+     # - script: echo 'infra test'
+     # - script: echo 'newtesting success'
+     # - script: pwd
+     # - script: ls
      # - script: ./IN/allpl-sample-script/gitRepo/echo.sh
-    on_failure:
-      - script: echo 'testing1 failure'
-      - script: echo 'failure runSh'
-      - script: ls
-      - NOTIFY: allpl-slack
-      - NOTIFY: allpl-email
+    #on_failure:
+     # - script: echo 'testing1 failure'
+     # - script: echo 'failure runSh'
+     # - script: ls
+     # - NOTIFY: allpl-slack
+     # - NOTIFY: allpl-email
    
