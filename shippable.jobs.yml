@@ -69,11 +69,12 @@ jobs:
       - IN: allpl-sample-script
       # versionName: testsha
       - IN: allpl-tg2
+      - IN: foo-resource
       #- IN: test-time-1
       - TASK:
         - script: ls
        # - script: pwd
-        - script: ./IN/allpl-sample-script3/gitRepo/echo.sh
+        - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     #on_start:
      # - NOTIFY: allpl-slack
      # - NOTIFY: allpl-email
