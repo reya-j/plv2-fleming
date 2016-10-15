@@ -81,8 +81,8 @@ jobs:
       - IN: allpl-dopts
       - IN: allpl-scale2 #REPLICA
       - IN: allpl-image1
-      - OUT: allpl-image2
-      - OUT: testallpl-dcldeployn1
+      - OUT: allpl-image2sreya
+     # - OUT: testallpl-dcldeployn1
       - IN: testallpl-ecsdeployup11
     
      
