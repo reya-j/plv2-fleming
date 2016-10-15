@@ -81,6 +81,7 @@ jobs:
       - IN: allpl-scale2 #REPLICA
       - IN: allpl-image1
       - IN: testallpl-ecsdeployup11
+      - IN: runShkn1
         #versionName: theyrev
        # versionNumber: 298000
       - IN: allpl-tg2
