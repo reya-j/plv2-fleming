@@ -74,6 +74,8 @@ jobs:
       - TASK:
         - script: ls
        # - script: pwd
+        - script: echo "$foo"
+        - script: echo "$m1"
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     #on_start:
      # - NOTIFY: allpl-slack
