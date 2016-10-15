@@ -62,12 +62,21 @@ jobs:
     on_failure:
       - NOTIFY: allpl-email
     #  - NOTIFY: allpl-slack
+  - name: runShkn1
+    type: runSh
+  #  serial: true
+    steps:
+      - IN: allpl-sample-script
+      - IN: triggertestS1
+      - IN: runShtest1
+      - TASK:
+        - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     
   - name: testnotify4
     type: runSh
     steps:
       - IN: allpl-sample-script
-        versionName: theyrev
+        #versionName: theyrev
        # versionNumber: 298000
       - IN: allpl-tg2
     
