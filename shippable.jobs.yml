@@ -83,6 +83,7 @@ jobs:
       - script: echo 'infra test'
       - script: echo 'newtesting success'
       - script: pwd
+      - script: ls
     on_failure:
       - script: echo 'testing1 failure'
       - script: echo 'failure runSh'
