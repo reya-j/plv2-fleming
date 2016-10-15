@@ -72,6 +72,7 @@ jobs:
       #- IN: test-time-1
       - TASK:
         - script: ls
+        - script: pwd
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     on_start:
       - NOTIFY: allpl-slack
