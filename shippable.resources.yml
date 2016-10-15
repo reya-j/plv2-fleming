@@ -9,13 +9,13 @@ resources:
     seed:
       versionName: "deploy.1"
   
-  - name: allpl-image2invalidimg
+  - name: allpl-image2
     type: image
     integration: ship-docker
     pointer:
-      sourceName: "shiphitchcock1/betaci"
+      sourceName: "shippabledocker/pipelinev2"
     seed:
-      versionName: "latest"
+      versionName: "deploy.1"
       
   - name: allpl-image3invalidtag
     type: image
