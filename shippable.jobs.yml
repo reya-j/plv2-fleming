@@ -80,7 +80,8 @@ jobs:
       - IN: allpl-dopts
       - IN: allpl-scale2 #REPLICA
       - IN: allpl-image1
-      - IN: testallpl-ecsdeployup11sreya
+      - IN: testallpl-ecsdeployup11
+      - IN: RUNDH5
      
         #versionName: theyrev
        # versionNumber: 298000
