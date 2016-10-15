@@ -79,7 +79,7 @@ jobs:
       - IN: allpl-manifestN11
       - IN: allpl-dopts
       - IN: allpl-scale2 #REPLICA
-      - OUT: allpl-image1
+      - IN: allpl-image1
       - IN: testallpl-ecsdeployup11
     
      
@@ -98,9 +98,9 @@ jobs:
      # - NOTIFY: allpl-slack
      # - NOTIFY: allpl-email
      # - script: echo 'test start'
-    on_success:
-      - NOTIFY: allpl-slack
-      - NOTIFY: allpl-email
+    #on_success:
+     # - NOTIFY: allpl-slack
+     # - NOTIFY: allpl-email
      # - script: echo 'infra test'
      # - script: echo 'newtesting success'
      # - script: pwd
