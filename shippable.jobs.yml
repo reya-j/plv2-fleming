@@ -67,8 +67,7 @@ jobs:
   #  serial: true
     steps:
       - IN: allpl-sample-script
-      - IN: triggertestS1
-      - IN: runShtest1
+      - IN: allpl-tg2
       - TASK:
         - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     
