@@ -190,12 +190,7 @@ resources:
   
 
   
-  - name: allpl-sample-script
-    type: gitRepo
-    integration: "github"
-    pointer:
-      sourceName: "shiphitchcock4/sample-script-3"
-      branch: "master"
+ 
       
   - name: allpl-sample-script2
     type: gitRepo
