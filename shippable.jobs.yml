@@ -76,6 +76,7 @@ jobs:
     type: runSh
     steps:
       - IN: allpl-sample-script
+      - IN: Sreya
         #versionName: theyrev
        # versionNumber: 298000
       - IN: allpl-tg2
