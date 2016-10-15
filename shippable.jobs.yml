@@ -76,7 +76,7 @@ jobs:
     steps:
       - IN: allpl-sample-script
       - IN: allpl-version
-      - IN: allpl-manifestN11
+      - IN: allpl-manifestN11sreya
       - IN: allpl-dopts
       - IN: allpl-scale2 #REPLICA
       - IN: allpl-image1
@@ -98,7 +98,7 @@ jobs:
      # - NOTIFY: allpl-email
      # - script: echo 'test start'
     on_success:
-      - NOTIFY: allpl-slacksreya
+      - NOTIFY: allpl-slack
       - NOTIFY: allpl-email
      # - script: echo 'infra test'
      # - script: echo 'newtesting success'
