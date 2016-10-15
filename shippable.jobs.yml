@@ -65,7 +65,7 @@ jobs:
     #  - NOTIFY: allpl-slack
   - name: runShkn1
     type: runSh
-  #  serial: true
+    serial: true
     steps:
       - IN: allpl-sample-script
       - IN: allpl-tg2
@@ -75,6 +75,7 @@ jobs:
     
   - name: testnotify4
     type: runSh
+    serial: true
     steps:
       - IN: allpl-sample-script
       - IN: allpl-version
@@ -98,7 +99,7 @@ jobs:
        # - script: pwd
         - script: echo "$foo"
         - script: echo "$m1"
-        - script: ./IN/allpl-sample-script3/gitRepo/echo.sh
+        - script: ./IN/allpl-sample-script/gitRepo/echo.sh
     #on_start:
      # - NOTIFY: allpl-slack
      # - NOTIFY: allpl-email
