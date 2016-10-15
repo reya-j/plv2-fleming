@@ -67,7 +67,7 @@ jobs:
     type: runSh
     steps:
       - IN: allpl-sample-script
-        versionName: 11877f7e5daa8ea3f16b5d118c522ce86e1b250a
+        versionName: theyrev
        # versionNumber: 298000
       - IN: allpl-tg2
     
