@@ -68,7 +68,7 @@ jobs:
     steps:
       - IN: allpl-sample-script
        # versionName: testsha
-        versionNumber: 2
+        versionNumber: 298000
       - IN: allpl-tg2
     
       #- IN: test-time-1
