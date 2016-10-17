@@ -7,7 +7,7 @@ jobs:
   - name: allpl-manifestN11
     type: manifest
     steps:
-     # - IN: allpl-image1
+      - IN: allpl-image1
        # versionNumber: 100
       - IN: allpl-dopts
       - IN: allpl-tg1
@@ -48,14 +48,14 @@ jobs:
       - NOTIFY: allpl-slack
       - NOTIFY: allpl-email
       
-  - name: testallpl-dcldeployn1
+  - name: testdcltest
     type: deploy
     steps:
-     # - IN: allpl-manifestN11
+      - IN: allpl-manifestN11
       # - IN: fl-manifest2multiimg
       #   switch: off
       - IN: allpl-dopts
-      - IN: foo-resource
+      #- IN: foo-resource
       - IN: allpl-dclcluster
     on_success:
       - NOTIFY: allpl-email
