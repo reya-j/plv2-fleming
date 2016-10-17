@@ -11,7 +11,7 @@ jobs:
        # versionNumber: 100
       - IN: allpl-dopts
       - IN: allpl-tg1
-      - TASK: managed
+      #- TASK: managed
     on_start:
       - NOTIFY: allpl-email
       - NOTIFY: allpl-slack
